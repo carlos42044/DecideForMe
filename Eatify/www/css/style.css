@@ -1,16 +1,9 @@
-/*@import 'https://fonts.googleapis.com/css?family=Dancing+Script';
-*/
-@import 'https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet';
-
+@import 'https://fonts.googleapis.com/css?family=Dancing+Script';
 /* Empty. Add your own CSS if you like */
 .title {
-  font-family: 'Roboto', sans-serif;
 
 }
 
-.background, .background .pane, .background .item, .background .item-complex .item-content {
-    background-color: #F5F8FA;
-}
 
 .bar.bar-calm{
 	background-color: #1DA1F2;
@@ -30,16 +23,9 @@
 
 .input {
   text-align: center;
-    font-family: 'Roboto', sans-serif;
-    color: #E1E8ED;
 }
 
-<<<<<<< HEAD
 .button.submitButton{
-=======
-.button {
-	font-family: 'Roboto', sans-serif;
->>>>>>> 35148bbaad22bd8de96570f4b17b96793401657b
 	margin-top: 4vh;
 	background-color: #1DA1F2;
 	color:white;
@@ -48,7 +34,7 @@
 
 
 h4 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Dancing Script', cursive;
   font-size: 4vh;
   font-weight: 100;
   color: #AAB8C2;
@@ -79,50 +65,11 @@ html, body {
     display: inline-block;
 }
 
-.map {
-	width: 100%;
-	height: 100%;
-}
-
-.uber {
-	width:15.6vh;
-	height:15.6vh;
-	margin-right: 5vh;
-}
-
-.lyft {
-	width:14vh;
-	height:14vh;
-	margin-top:1vh;
-}
-
-.item-avatar > img:first-child, .item-avatar .item-image, .item-avatar .item-content > img:first-child, .item-avatar .item-content .item-image, .item-avatar-left > img:first-child, .item-avatar-left .item-image, .item-avatar-left .item-content > img:first-child, .item-avatar-left .item-content .item-image {
-    position: absolute;
-    top: 16px;
-    left: 16px;
-    max-width: 80px;
-    max-height: 80px;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-}
-
-.restaurantName{
-	padding-left: 5vh;
-}
-
 .locationIcon {
 	width:2vh;
 	height:2vh;
-	margin-left:5vh;
 }
 .card .item:last-child, .list-inset .item:last-child {
     margin-bottom: -1px;
     font-size:1.8vh;
 }
-
-.card.mapCard {
-	margin-top: 10vh;
-}
-
-
