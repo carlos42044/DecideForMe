@@ -9,13 +9,18 @@ angular.module('starter.services', [])
     return $http.get(API + '/tweets/' + username);
   }
 
-  self.getPlaces = function(places) {
-    return $http.get("http://ipinfo.io", function(response) {
-    console.log(response.city, response.country);
-}, "jsonp");
-    // return $http.post(API + '/getplaces', {
-    //   places: places  
-    // });
+  self.getPlaces = function(places, location) {
+    return $http.post(API + '/getplaces', {
+      places: '',
+      location: location
+    });
   }
+})
 
+.service('LocationAPI', function($http) {
+  var self = this;
+
+  self.getLocation = function() {
+    return $http.get("http://ipinfo.io");
+  }
 })

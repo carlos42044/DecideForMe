@@ -24,8 +24,8 @@ var client = new Twitter({
 var yelp = new Yelp({
   consumer_key: 'mygJi6gpNFI7GUo-16LpTg',
   consumer_secret: 'yPxNeguI97vNmgLElWC60ebFPxk',
-  token: 'i5PuyRxfYswYrqlOfnqO8UuCcsZlSscI',
-  token_secret: 'osc1d2PXqrSSmXQ0FptctRSzay0',
+  token: '53Ef3ja9CyDUeIU-4_ftkf4TBDQMxk3E',
+  token_secret: 'wzInled2ymn6aLBJfrdv6_fZ2wc',
 });
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -37,7 +37,7 @@ app.use(function(req, res, next) {
 //get all tweets from user
 app.get('/tweets/:username', function(req, res) {
   var allTweets = '';
-  client.get('statuses/user_timeline', {screen_name: req.params.username, count: 3000},  function(error, tweet, response) {
+  client.get('statuses/user_timeline', {screen_name: req.params.username},  function(error, tweet, response) {
     if(error) {
       res.send(error);
     }
@@ -47,17 +47,17 @@ app.get('/tweets/:username', function(req, res) {
   });
 })
 function checkPopularity(tweets) {
-  allTweets = '';
+  allTweets = [];
   for (var i = 0, len = tweets.length; i < len; i++) {
-    if(tweets[i].text) {
-      allTweets = allTweets.concat(tweets[i].text);
+    if(tweets[i].entities.hashtags) {
+      allTweets = allTweets.concat(tweets[i].entities.hashtags);
     }
   }
   return allTweets;
 }
 
 app.post('/getplaces', function(req, res) {
-  yelp.search({ term: req.body.places, location: 'New York' })
+  yelp.search({ term: req.body.places , location: req.body.location})
   .then(function (data) {
     res.json(data);
   })

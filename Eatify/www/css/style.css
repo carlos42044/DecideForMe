@@ -25,7 +25,7 @@
   text-align: center;
 }
 
-.button {
+.button.submitButton{
 	margin-top: 4vh;
 	background-color: #1DA1F2;
 	color:white;
@@ -48,10 +48,21 @@ h4 {
     padding-bottom: 1vh;
     padding-top: 1vh;
 }	
+.alignLeft {
+  display: inline-block;
+  text-align: right;
+}
 
-.foodPic {
-	width:15vh;
-	height:15vh;
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#map {
+  height: 100%;
+}
+.foodPic{
+    display: inline-block;
 }
 
 .locationIcon {

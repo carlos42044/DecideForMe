@@ -11,10 +11,10 @@
       <img class="logo" src="http://i.imgur.com/RpI61sh.png" alt="">
       <h4>Tell me who you are and I will tell you where to go</h4>
       <label class="item item-input">	
-      	<input type="text" class="input" placeholder="Please input your twitter handle">
+      	<input type="text" ng-model="data.twitterHandle" class="input" placeholder="Please input your twitter handle">
       </label>
 
-      <button class="button Go">
+      <button class="button submitButton" ng-disabled="!data.twitterHandle" ng-click="getTweets()" class="button Go">
          Go
       </button>
 
