@@ -1,5 +1,64 @@
+@import 'https://fonts.googleapis.com/css?family=Dancing+Script';
 /* Empty. Add your own CSS if you like */
+.title {
+
+}
+
+
+.bar.bar-calm{
+	background-color: #1DA1F2;
+}
+
+.bar.bar-calm .title {
+    color: #fff;
+    font-weight: bold;
+    font-size: 3.5vh;
+}
+
 .logo {
-  width: 10vh;
-  height: 10vh;
+  width: 35vh;
+  height: 35vh;
+}
+
+
+.input {
+  text-align: center;
+}
+
+.button {
+	margin-top: 4vh;
+	background-color: #1DA1F2;
+	color:white;
+	font-weight: bold;
+}
+
+
+h4 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4vh;
+  font-weight: 100;
+  color: #AAB8C2;
+  margin-bottom: 4vh;
+}
+
+.card .item, .list-inset .item, .padding > .list .item, .padding-horizontal > .list .item {
+    font-size: 2vh;
+    margin-right: 0;
+    margin-left: 0;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+}	
+
+.foodPic {
+	width:15vh;
+	height:15vh;
+}
+
+.locationIcon {
+	width:2vh;
+	height:2vh;
+}
+.card .item:last-child, .list-inset .item:last-child {
+    margin-bottom: -1px;
+    font-size:1.8vh;
 }
